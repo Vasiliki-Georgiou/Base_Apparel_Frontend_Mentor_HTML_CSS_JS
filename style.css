@@ -1,0 +1,108 @@
+/* Common Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --desaturated_red: hsl(0, 36%, 70%);
+  --soft_red: hsl(0, 93%, 68%);
+  --dark_grayish_red: hsl(0, 6%, 24%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* End of Common Styles */
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 3rem 0;
+}
+
+header svg {
+  margin: 0 0 3rem 3rem;
+}
+
+header img {
+  width: 100%;
+  max-height: 30rem;
+  object-fit: fill;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  text-align: center;
+}
+
+.main-title {
+  text-transform: uppercase;
+  color: var(--dark_grayish_red);
+  font-weight: 600;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.main-title p {
+  margin-bottom: 0.5rem;
+  letter-spacing: 1rem;
+}
+
+.main-title p:first-of-type {
+  color: var(--desaturated_red);
+  font-weight: 300;
+}
+
+.text p {
+  color: var(--desaturated_red);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+form {
+  margin-top: 2rem;
+  position: relative;
+}
+
+form input {
+  width: 25rem;
+  border-radius: 1.8rem;
+  border: .1rem solid var(--desaturated_red);
+  padding: 1.2rem 0.8rem;
+}
+
+form input::placeholder {
+  color: var(--desaturated_red);
+  opacity: 0.8;
+  padding-left: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+form button {
+  width: 5.4rem;
+  height: 4.2rem;
+  border-radius: 1.8rem;
+  border: none;
+  background:
+    linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)),
+    linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  position: absolute;
+  top: 0;
+  right: 0;
+}
